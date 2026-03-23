@@ -1,0 +1,252 @@
+.wrapper {
+  margin-top: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.headerLabel {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #7a8ba3;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 6px 0 0;
+  background: linear-gradient(135deg, #00d4aa, #00a3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+/* Counter */
+.counterCard {
+  background: rgba(0, 163, 255, 0.1);
+  border: 1px solid rgba(0, 163, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.counterLabel {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #7a8ba3;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.counterNumber {
+  font-size: 48px;
+  font-weight: 800;
+  color: #00a3ff;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Form */
+.form {
+  background: #1a2332;
+  border: 1px solid #2a3a4e;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 11px;
+  color: #7a8ba3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.input {
+  background: #0f1419;
+  border: 1px solid #2a3a4e;
+  border-radius: 8px;
+  color: #e8ecf1;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input::-webkit-calendar-picker-indicator {
+  filter: invert(0.6) sepia(1) saturate(2) hue-rotate(150deg);
+  cursor: pointer;
+}
+
+.input:focus {
+  border-color: #00d4aa;
+}
+
+.input::placeholder {
+  color: #4a5b6e;
+}
+
+.input::-webkit-datetime-edit {
+  color: #4a5b6e;
+}
+
+.input[data-has-value="true"]::-webkit-datetime-edit {
+  color: #e8ecf1;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #00d4aa, #00a3ff);
+  border: none;
+  border-radius: 8px;
+  color: #0f1419;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: opacity 0.15s;
+  margin-top: 6px;
+}
+
+.submitBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.submitBtn:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+/* List */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.empty {
+  text-align: center;
+  color: #4a5b6e;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.item {
+  background: #1a2332;
+  border: 1px solid #2a3a4e;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s;
+}
+
+.itemEditing {
+  border-color: rgba(0, 212, 170, 0.4);
+  background: rgba(0, 212, 170, 0.05);
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.itemDate {
+  font-size: 13px;
+  font-weight: 600;
+  color: #00d4aa;
+  font-variant-numeric: tabular-nums;
+}
+
+.itemReason {
+  font-size: 12px;
+  color: #7a8ba3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editBtn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #4a5b6e;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.editBtn:hover {
+  color: #00d4aa;
+  border-color: rgba(0, 212, 170, 0.2);
+  background: rgba(0, 212, 170, 0.1);
+}
+
+.deleteBtn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #4a5b6e;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.deleteBtn:hover {
+  color: #ff6b6b;
+  border-color: rgba(255, 107, 107, 0.2);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.cancelEditBtn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #00d4aa;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.cancelEditBtn:hover {
+  border-color: rgba(0, 212, 170, 0.3);
+  background: rgba(0, 212, 170, 0.1);
+}
