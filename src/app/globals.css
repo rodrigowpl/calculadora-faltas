@@ -1,0 +1,62 @@
+:root {
+  --bg: #0F1419;
+  --card: #1A2332;
+  --card-border: #2A3A4E;
+  --accent: #00D4AA;
+  --accent-dim: rgba(0, 212, 170, 0.15);
+  --accent-blue: #00A3FF;
+  --danger: #FF6B6B;
+  --danger-dim: rgba(255, 107, 107, 0.15);
+  --warning: #FFD93D;
+  --warning-dim: rgba(255, 217, 61, 0.15);
+  --text: #E8ECF1;
+  --text-muted: #7A8BA3;
+  --text-dim: #4A5B6E;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', ui-monospace, monospace;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+@media all and (display-mode: standalone) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
