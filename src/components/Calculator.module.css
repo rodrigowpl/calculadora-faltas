@@ -121,13 +121,15 @@
 
 .sliderRange {
   position: absolute;
-  top: -8px;
+  top: -18px;
   left: 0;
   width: 100%;
-  height: 22px;
+  height: 42px;
   opacity: 0;
   cursor: pointer;
   margin: 0;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .sliderThumb {
